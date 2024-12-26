@@ -254,6 +254,9 @@ h5 {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
 }
 
 .about-social-list {
@@ -308,6 +311,19 @@ h5 {
 .about-content {
   flex: 60%;
   padding-right: 3rem;
+}
+
+.center-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.center-images img {
+  width: 100px; /* Set uniform width */
+  height: 100px; /* Set uniform height */
+  /* object-fit: contain; Ensure the images maintain their aspect ratio */
 }
 
 .about-skills {
