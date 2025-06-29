@@ -94,7 +94,7 @@
           </div>
           <div class="hero-img">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQH87VmaJFdGWA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718215794801?e=1756944000&v=beta&t=Je3Xr6LAjnTheq701N-mHPXEjlZfJ8FzXdoLhgcNIsU"
+              src="files/profile.jpg"
               alt="Picture of Renan"
             />
           </div>
@@ -157,7 +157,7 @@
                 />
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg"
+                  src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"
                   alt="Redis"
                 />
                 <img
@@ -254,25 +254,55 @@
         </div>
         <div class="projects-container">
           <div class="projects-row">
+            <div class="project-box-image">
+              <a href="https://github.com/lealre/stripe-photo-gateway" target="_blank">
+                <img class="project-img" src="img/projects/stripe.gif" alt="" />
+              </a>
+            </div>
+            <div class="project-box-text">
+              <h3>
+                Payment Gateway and Background Processing for Photo & Portrait Orders using Stripe, Celery, Redis, and FastAPI
+              </h3>
+              <p>
+                This project implements a payment gateway and background processing system for online photo and portrait orders. Customer photos are initially cached in Redis, ensuring that no data is permanently stored until payment is successfully confirmed. Once payment is received, Celery is used to handle the storage and owner notification processes asynchronously in the background, optimizing performance and user experience. This architecture guarantees that only paid orders are processed and leverages background tasks to maintain a responsive and efficient workflow.
+              </p>
+              <p>
+                <a href="https://github.com/lealre/stripe-photo-gateway" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                  <img src="img/social_icons/github.svg" alt="GitHub" style="width: 22px; height: 22px; vertical-align: middle;" />
+                  <span>View project on GitHub</span>
+                </a>
+              </p>
+              <div class="project-badges">
+                <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="" />
+                <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge" alt="" />
+                <img src="https://img.shields.io/badge/SQLAlchemy-red?style=for-the-badge&logo=sqlalchemy" alt="" />
+                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/Pytest-blue?style=for-the-badge&logo=pytest" alt="" />
+                <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/aws-232F3E?style=for-the-badge" alt=""/>  
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-row">
             <div class="project-box-text">
               <h3>
                 Web App for a Digital Book Collection using FastAPI for Backend
                 and React for Frontend
               </h3>
+              <p>Backend built with FastAPI for the Python backend API, with asynchronous routes.</p>
+              <p>Frontend React using TypeScript and Vite.</p>
+              <p>PostgreSQL as the SQL database, using the Asyncpg driver.</p>
+              <p>Tests with Pytest and Testcontainers.</p>
+              <p>Pre-commit with Ruff for linting.</p>
+              <p>CI (Continuous Integration) based on GitHub Actions.</p>
+              <p>JWT (JSON Web Token) authentication.</p>
               <p>
-                Backend built with FastAPI for the Python backend API, with
-                asynchronous routes. SQLAlchemy for Python SQL database
-                interactions (ORM). Pydantic, used by FastAPI, for data
-                validation and settings management. PostgreSQL as the SQL
-                database, using the Asyncpg driver. Tests with Pytest and
-                Testcontainers. Pre-commit with Ruff for linting. CI (Continuous
-                Integration) based on GitHub Actions. 🔒 Secure password hashing
-                by default. 🔑 JWT (JSON Web Token) authentication. 🐋 Docker
-                Compose for running all services together, including the
-                PostgreSQL database. Frontend React using TypeScript and Vite.
-                Chakra UI for frontend components. Axios to handle the backend
-                API requests. React Hook Form to handle the submission of data
-                in forms.
+                <a href="https://github.com/lealre/madr-fullstack" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                  <img src="img/social_icons/github.svg" alt="GitHub" style="width: 22px; height: 22px; vertical-align: middle;" />
+                  <span>View project on GitHub</span>
+                </a>
               </p>
               <div class="project-badges">
                 <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="" />
@@ -288,7 +318,7 @@
               </div>
             </div>
             <div class="project-box-image">
-              <a href="#!">
+              <a href="https://github.com/lealre/madr-fullstack" target="_blank">
                 <img
                   class="project-img"
                   src="img/projects/madr-full.gif"
@@ -298,7 +328,7 @@
             </div>
           </div>
 
-          <div class="projects-row">
+          <!-- <div class="projects-row">
             <div class="project-box-image">
               <a href="#!">
                 <img class="project-img" src="img/projects/madr.gif" alt="" />
@@ -321,34 +351,11 @@
                 <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="" />
               </div>
             </div>
-          </div>
-
-          <div class="projects-row">
-            <div class="project-box-text">
-              <h3>Django ToDo App</h3>
-              <p>Some description</p>
-              <p>Some description</p>
-              <p>Some description</p>
-              <div class="project-badges">
-                <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="" />
-                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" alt="" />
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="" />
-                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="" />
-                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="" />
-                <img src="https://img.shields.io/badge/Pytest-blue?style=for-the-badge&logo=pytest" alt="" />
-                <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="" />
-              </div>
-            </div>
-            <div class="project-box-image">
-              <a href="#!">
-                <img class="project-img" src="img/projects/django.gif" alt="" />
-              </a>
-            </div>
-          </div>
+          </div> -->
 
           <div class="projects-row">
             <div class="project-box-image">
-              <a href="#!">
+              <a href="https://github.com/lealre/etl-airflow" target="_blank">
                 <img
                   class="project-img"
                   src="/img/projects/etl-diagram.png"
@@ -361,7 +368,13 @@
                 Orchestrating an ETL with Airflow - From Google Drive to
                 PostgreSQL
               </h3>
-              <p>Some description</p>
+              <p>This project aims to orchestrate an ETL (Extract-Transform-Load) with Airflow, extracting CSV files from a folder in Google Drive, transforming values, and storing them in a PostgreSQL database.</p>
+              <p>
+                <a href="https://github.com/lealre/etl-airflow" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                  <img src="img/social_icons/github.svg" alt="GitHub" style="width: 22px; height: 22px; vertical-align: middle;" />
+                  <span>View project on GitHub</span>
+                </a>
+              </p>
               <div class="project-badges">
                 <img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white" alt="" />
                 <img src="https://img.shields.io/badge/SQLAlchemy-red?style=for-the-badge&logo=sqlalchemy" alt="" />
@@ -376,7 +389,14 @@
           <div class="projects-row">
             <div class="project-box-text">
               <h3>Crawler to Dash</h3>
-              <p>Some description</p>
+              <p>An implementation of a dashboard containing data scraped from a real estate website: Imovirtual, a Portuguese real estate website offering homes, apartments, and other properties for sale and rent. Using MongoDB as the database, it crawls raw data, cleans it, and makes it ready to be used in the dashboard.</p>
+              <p>Both the dashboard and the scripts to crawl the data were implemented using Python. The dashboard uses the Dash and Dash Bootstrap Components frameworks. To scrape the data, it uses Requests, asynchronous requests with HTTPX, and BeautifulSoup.</p>
+              <p>
+                <a href="https://github.com/lealre/crawler-to-dash" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                  <img src="img/social_icons/github.svg" alt="GitHub" style="width: 22px; height: 22px; vertical-align: middle;" />
+                  <span>View project on GitHub</span>
+                </a>
+              </p>
               <div class="project-badges">
                 <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="" />
                 <img src="https://img.shields.io/badge/Plotly-blue?style=for-the-badge&logo=plotly" alt="" />
@@ -384,12 +404,39 @@
               </div>
             </div>
             <div class="project-box-image">
-              <a href="#!">
+              <a href="https://github.com/lealre/crawler-to-dash" target="_blank">
                 <img
                   class="project-img"
                   src="/img/projects/crawler-dash.gif"
                   alt=""
                 />
+              </a>
+            </div>
+          </div>
+
+          <div class="projects-row">
+            <div class="project-box-text">
+              <h3>Django Task Manager App</h3>
+              <p>A simple task manager app built with Django. It allows users to create, update, and delete tasks.</p>
+              <p>
+                <a href="https://github.com/lealre/todo-django" target="_blank" title="View on GitHub" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                  <img src="img/social_icons/github.svg" alt="GitHub" style="width: 22px; height: 22px; vertical-align: middle;" />
+                  <span>View project on GitHub</span>
+                </a>
+              </p>
+              <div class="project-badges">
+                <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="" />
+                <img src="https://img.shields.io/badge/Pytest-blue?style=for-the-badge&logo=pytest" alt="" />
+                <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="" />
+              </div>
+            </div>
+            <div class="project-box-image">
+              <a href="https://github.com/lealre/todo-django" target="_blank">
+                <img class="project-img" src="img/projects/django.gif" alt="" />
               </a>
             </div>
           </div>
