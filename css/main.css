@@ -459,12 +459,17 @@ h5 {
   flex: 1 1 40%;
   max-width: 40%;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .project-box-text h3 {
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+  /* letter-spacing: 0.05em; */
+  word-spacing: 0.1em;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -473,6 +478,25 @@ h5 {
   font-size: 1.5rem;
   line-height: 1.7;
   color: var(--gray-text-color);
+  margin-bottom: 1.5rem;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.project-badges img {
+  height: 3.5rem;
+  margin: 0;
+  background: #f7fbfd;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  padding: 0.3rem 0.8rem;
 }
 
 /* Contact */
