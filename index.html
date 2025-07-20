@@ -349,29 +349,27 @@
 
           <div class="projects-row">
             <div class="project-box-image">
-              <a href="https://github.com/lealre/fs-mcp" target="_blank">
+              <a href="https://github.com/lealre/http1-server" target="_blank">
                 <img
                   class="project-img"
-                  src="img/projects/fs-mcp.png"
+                  src="img/projects/http-from-tcp.png"
                   alt="Filesystem MCP Project Screenshot"
                 />
               </a>
             </div>
             <div class="project-box-text">
-              <h3>Filesystem MCP in Golang</h3>
+              <h3>A simple HTTP 1.1 server implementation in go</h3>
+
               <p>
-                An MCP implementation that provides tools for interacting with
-                the file system, including listing directories, reading and
-                writing files, and renaming or copying files and folders.
+                This project is a simple HTTP/1.1 server written in Go, focusing on clear structure and core protocol features.
               </p>
               <p>
-                You can do it locally via the command line (stdio) or run it as
-                an HTTP server.
+                The main TCP connection data reading implementation resides in the internal folder, which includes the server package for server creation, the request package for reading incoming requests, the headers package for request header parsing logic (used by both request and response packages), and the response package for managing server response logic. 
               </p>
-              <p>You can install the CLI with Go or run it using Docker.</p>
+              <p>The response writer package also includes support for a simplified version of chunked encoding and HTTP trailers.</p>
               <p>
                 <a
-                  href="https://github.com/lealre/fs-mcp"
+                  href="https://github.com/lealre/http1-server"
                   target="_blank"
                   title="View on GitHub"
                   style="
@@ -488,6 +486,57 @@
                   alt=""
                 />
               </a>
+            </div>
+          </div>
+
+          <div class="projects-row">
+            <div class="project-box-image">
+              <a href="https://github.com/lealre/fs-mcp" target="_blank">
+                <img
+                  class="project-img"
+                  src="img/projects/fs-mcp.png"
+                  alt="Filesystem MCP Project Screenshot"
+                />
+              </a>
+            </div>
+            <div class="project-box-text">
+              <h3>Filesystem MCP in Golang</h3>
+              <p>
+                An MCP implementation that provides tools for interacting with
+                the file system, including listing directories, reading and
+                writing files, and renaming or copying files and folders.
+              </p>
+              <p>
+                You can do it locally via the command line (stdio) or run it as
+                an HTTP server.
+              </p>
+              <p>You can install the CLI with Go or run it using Docker.</p>
+              <p>
+                <a
+                  href="https://github.com/lealre/fs-mcp"
+                  target="_blank"
+                  title="View on GitHub"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    text-decoration: none;
+                  "
+                >
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="GitHub"
+                    style="width: 22px; height: 22px; vertical-align: middle"
+                  />
+                  <span>View project on GitHub</span>
+                </a>
+              </p>
+              <div class="project-badges">
+                <img
+                  src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"
+                  alt="Go"
+                />
+              </div>
             </div>
           </div>
 
